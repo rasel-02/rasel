@@ -1,0 +1,509 @@
+/* commmon css Start  */
+:root{
+    --primary-color: #FFCC00;
+    --secondary-color: #353535;
+    --secondary-text-color: #7A7A7A;
+    --default-white: #ffff;
+    --default-black: #000000;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--default-white);
+}
+h1,h2{
+    font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+p,
+span,
+small,
+ol,ul{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/* commmon css Start  */
+
+/* ____________________________________navber______________________________ */
+
+/* nav section css Start */
+#mynav{
+    background-color: var(--default-white);
+}
+#mynav ul li a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    text-transform: uppercase;
+    padding: 15px 23px;
+    position: relative;
+    color: var(--secondary-color);
+}
+#mynav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    transition: .8s;
+    background-color: var(--secondary-color);
+}
+#mynav ul li:hover a::after,
+#mynav ul li a.active::after{
+    width: 100%;
+    left: 0;
+}
+/* nav section css End  */
+
+
+
+/* __________________________page heder___________________ */
+
+/* page heder css start  */
+#page_heder > .container{
+    background-image: url(../img/page_heder_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 34px;
+    text-align: center;
+}
+#page_heder h2{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    color: var(--default-white);
+    font-weight: 700;
+}
+#page_heder p{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    font-weight: 600;
+    color: var(--default-white);
+}
+#page_heder h2::before{
+    content:"";
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: -15px;
+    left: -12px;
+    background-image: url(../img/page_heder_chape.svg);
+    background-size: cover;
+    background-position: center
+}
+#page_heder p::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    border: 2px solid var(--default-white) ;
+    bottom: 8px;
+    left: -102px;
+}
+#page_heder p::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    border: 2px solid var(--default-white) ;
+    bottom: 8px;
+    right: -105px;
+}
+/* page heder css end  */
+
+
+
+
+/* _______________________about______________________ */
+/* #about{
+    padding: 85px;
+}
+#about .about_img img{
+    margin-left: -10px;
+}
+#about .about_info p{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 200%;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 123px;
+    color:var(--secondary-text-color);    
+}
+#about .about_item h6{
+    display: block;
+} */
+/* __________________________contact___________________________ */
+
+
+/* contact section css Start */
+#contact{
+padding: 119px;
+background-color: var(--default-white);
+}
+#contact  .contact_part{
+    padding-bottom: 48px ;
+}
+#contact .contact_icon_1 a i{
+    font-size: 28px;
+    padding: 24px ;
+    color: #F16500;
+    background: #FFEBDC;
+    border-radius: 50%;
+}
+#contact .contact_item h5{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 190%;
+    padding-left: 8px;
+    color:(--secondary-color);
+}
+#contact .contact_item p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    padding-left: 5px;
+    color:var(--secondary-text-color);
+}
+#contact .contact_icon_2 a i{
+    font-size: 28px;
+    padding: 24px;
+    color: #55852F;
+    background-color: #F0FFE4;
+    border-radius: 50%;
+}
+#contact .contact_icon_3 a i{
+    font-size: 28px;
+    padding: 24px;
+    border-radius: 50%;
+    color: #234BDA;
+    background-color: #EEF2FF;
+}
+#contact_tbl .contact_table_box input{
+    height: 64px;
+    width: 304px;
+    padding: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 190%;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--secondary-text-color);
+}
+#contact_tbl .contact_table_box .box,
+#contact_tbl .contact_table_box .box_1,
+#contact_tbl .contact_table_box .box_2{
+    margin: 16px 0;
+}
+#contact_tbl .contact_table_box .box_1,
+#contact_tbl .contact_table_box .box_2{
+    margin-right: 10px;
+}
+#contact_tbl .sms_box input {
+    height: 246px;
+    width: 635px;
+    padding-bottom: 190px ;
+    padding-left: 15px;
+    font-weight: 300;
+    font-size: 17px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--secondary-text-color);
+
+}
+#contact_tbl .sms_box a{
+    padding:  20px 46px;
+    display: inline-block;
+    margin-top: 21px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;;
+    color:var(--default-white);
+    transition: .7s;
+}
+#contact_tbl .sms_box a:hover{
+    border-radius: 50px;
+    color: var(--primary-color);
+    background-color: var(--default-black);
+}
+/* contact section css End  */
+
+
+
+
+
+/* ____________________________blogs__________________ */
+
+
+
+
+
+/* blogs section css start  */
+#blog {
+    padding: 70px 0;
+    background-color: var(--default-white);
+}
+#blog .banner img{
+    margin-left:-15px ;
+}
+#blog .banner_item h2{
+    padding:0 53px ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 164.5%;
+    color: var(--secondary-color);
+}
+#blog .banner_item p{
+    padding: 53px  ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200.5%;
+    color: (--secondary-text-color);
+}
+#blog .banner_item  h6{
+padding-left:50px;
+color: var(--secondary-text-color);
+}
+#blog .banner_item h6 b{
+    color: var(--secondary-color);
+}
+/* banner sectin css End  */
+
+/* blogs 2nd part sectinon start */
+#banner_part_2{
+    background-color: var(--default-white);
+    padding: 30px;
+}
+#banner_part_2 .banner_part_2_item h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 190%;
+    width: 245px;
+    padding: 45px 0 0;
+    color: var(--secondary-color);
+}
+#banner_part_2 .banner_part_2_item p{
+    width: 323px;
+    padding: 24px 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200.5%;
+}
+#banner_part_2 .banner_part_2_item i{
+    padding-bottom: 100px;
+    color:var(--secondary-text-color);
+}
+/* blogs 2nd part sectinon end  */
+
+
+/* ______________________________project______________________ */
+
+
+/* project section css start */
+#gallary{
+    padding: 102px;
+    background-color: var(--default-white);
+}
+
+#gallary .gallary_nav ul li{           
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    padding: 26px 50px ;
+    border-radius: 15px;
+    margin: 5px;
+    transition: .7s;
+    border: 2px solid var(--default-black);
+    color: var(--secondary-color);
+}
+#gallary .img_ber1 {
+    padding-top: 60px;
+    margin-left: -10px;
+}
+#gallary .img_ber1 a{
+    padding: 28px 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color:var(--secondary-text-color);
+}
+#gallary .img_ber1 p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 95px;
+    color:var(--secondary-color);
+}
+#gallary .img_ber2 {
+    padding-top: 60px;
+    padding-left: 70px;
+}
+#gallary .img_ber2 a{
+    padding: 28px 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: var(--secondary-text-color);
+}
+#gallary .img_ber2 p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 95px;
+    color:var(--secondary-color);
+}
+/* project section css End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ___________________________________footer_____________________________________ */
+
+/* footer section css Start  */
+#footer{
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 85px 0;
+}
+#footer .footer_2 h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 200%;
+    color: var(--default-white);
+}
+#footer .footer_2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: justify;
+    color:var(--secondary-text-color);
+}
+#footer .footer_3 a{
+    border-radius: 16px;
+    padding: 15px 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--default-white);
+    background: var(--primary-color);
+    transition: .8s;
+}
+#footer .footer_3 a:hover{
+    color: var(--primary-color);
+    background-color: var(--default-black);
+}
+
+#footer_2nd{
+    padding-top: 137px;
+}
+#footer_2nd .footer_2nd_1 p,
+#footer_2nd .footer_2nd_2 p,
+#footer_2nd .footer_2nd-3 p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--secondary-text-color);
+}
+#footer_2nd .footer_2nd_1 a,
+#footer_2nd .footer_2nd_2 a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: justify;
+    color: var(--default-white);
+}
+#footer_2nd .footer_2nd-3 li a {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 48%;
+    line-height: 48%;
+    margin: 2px;
+    background-color: #484848;
+}
+#footer_2nd .footer_2nd-3 li i{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    left: 1129px;
+    color: var(--default-white);
+}
+/* footer section css End  */
+
+/* page heder css start  */
+#page_heder > .container{
+    background-image: url(../img/page_heder_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 34px;
+    text-align: center;
+}
+#page_heder h2{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    color: var(--default-white);
+    font-weight: 700;
+}
+#page_heder p{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    font-weight: 600;
+    color: var(--default-white);
+}
+#page_heder h2::before{
+    content:"";
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: -15px;
+    left: -12px;
+    background-image: url(../img/page_heder_chape.svg);
+    background-size: cover;
+    background-position: center
+}
+#page_heder p::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    border: 2px solid var(--default-white) ;
+    bottom: 8px;
+    left: -102px;
+}
+#page_heder p::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    border: 2px solid var(--default-white) ;
+    bottom: 8px;
+    right: -105px;
+}
+/* page heder css end  */
